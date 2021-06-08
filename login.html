@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Santa Art Studios | Login</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header id="header">
+
+    <div class="container">
+
+      <div class="logo float-left">
+
+        <a href="index.php" class="scrollto"><img src="img/logo/LogoExtenso.png" alt="" class="img-fluid"></a>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="login forms-section">
+    <div class="forms">
+      <div class="form-wrapper is-active">
+        <button type="button" class="switcher switcher-login">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Login
+          <span class="underline"></span>
+        </button>
+        <form class="form form-login" method="post" action="./php/LoginUser.php">
+          <fieldset>
+            <div class="input-block">
+              <label for="login-email">E-mail:</label>
+              <input id="login-email" type="email" name="email" required>
+            </div>
+            <div class="input-block">
+              <label for="login-password">Senha:</label>
+              <input id="login-password" type="password" name="senha" required>
+            </div>
+            <i class="fa fa-key" style="color: #2DB6EA; font-size: 11px;" aria-hidden="true"></i><a href="forgotpassword.html" class="esquecisenha" style="text-decoration: none;"> Esqueci a Senha</a><br>
+
+          </fieldset>
+          <button type="submit" class="btn-login">Entrar</button>
+        </form>
+      </div>
+      <div class="form-wrapper">
+        <button type="button" class="switcher switcher-signup">
+          <i class="fa fa-user-plus" aria-hidden="true"></i>
+          Cadastre-se
+          <span class="underline"></span>
+        </button>
+        <form class="form form-signup" method="post" action="./php/InserirCliente.php">
+          <fieldset>
+          <div class="input-block">
+              <label for="signup-email">Nome:</label>
+              <input id="signup-email" type="text" name="nome" required>
+            </div>
+            <div class="input-block">
+              <label for="signup-email">E-mail:</label>
+              <input id="signup-email" type="email" name="email" required>
+            </div>
+            <div class="input-block">
+              <label for="signup-password">Senha:</label>
+              <input id="signup-password" type="password" name="senha" required>
+            </div>
+          </fieldset>
+          
+          <button id="teste" type="submit" class="btn-signup">Registrar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="lib/login-page/login.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
